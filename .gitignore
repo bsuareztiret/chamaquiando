@@ -1,0 +1,10 @@
+.next
+.DS_store
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.next/cache/*
+node_modules/
+public/documents

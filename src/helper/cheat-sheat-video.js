@@ -1,0 +1,18 @@
+export const CheatSheetVideo = [
+  // {name: "Chama0.jpg", alt: "picture of Chama, solo", width: 240, height: 319 },
+  {title: "", index: 0, name: "Carnaval.mp4", alt: "picture of Chama and 3 other's person", width: 640, height: 480 },
+  {title: "", index: 1, name: "Chamaquiando.mp4", alt: "picture of Chama and another one", width: 640, height: 480 },
+  {title: "", index: 2, name: "ChanChan.mp4", alt: "picture of Chama, and 4 other's person", width: 640, height: 480 },
+  {title: "", index: 3, name: "ChanChanChan.mp4", alt: "picture of Chama, red solo", width: 640, height: 480 },
+  {title: "", index: 4, name: "Cocinando.mp4", alt: "picture of Chama, american flag", width: 640, height: 480 },
+  {title: "", index: 5, name: "ConlaPunta.mp4", alt: "picture of Chama, nice camisa", width: 640, height: 480 },
+  {title: "", index: 6, name: "ElCuarto.mp4", alt: "picture of Chama, nice camisa", width: 640, height: 480 },
+  {title: "", index: 7, name: "Fiesta.mp4", alt: "picture of Chama, nice camisa", width: 640, height: 480 },
+  {title: "", index: 8, name: "MasFiesta.mp4", alt: "picture of Chama, nice camisa", width: 640, height: 480 },
+  {title: "", index: 9, name: "Moliendo.mp4", alt: "picture of Chama, nice camisa", width: 640, height: 480 },
+  {title: "", index: 10, name: "Muele.mp4", alt: "picture of Chama, nice camisa", width: 640, height: 480 },
+  {title: "", index: 11, name: "OyeComoVa.mp4", alt: "picture of Chama, nice camisa", width: 640, height: 480 },
+  {title: "", index: 12, name: "Pachanga.mp4", alt: "picture of Chama, nice camisa", width: 640, height: 480 },
+  {title: "", index: 13, name: "SalsaSalsita.mp4", alt: "picture of Chama, nice camisa", width: 640, height: 480 },
+  {title: "", index: 14, name: "SondelaLoma.mp4", alt: "picture of Chama, nice camisa", width: 640, height: 480 },
+]
