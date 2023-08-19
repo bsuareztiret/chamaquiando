@@ -5,6 +5,7 @@ import { CheatSheetMusic } from "../helper/cheat-sheat-music";
 import { CheatSheetVideo } from "../helper/cheat-sheat-video";
 import Player from "./player";
 import { Agenda } from "../../types/db/agenda";
+import { PATH } from "../../utils/constants";
 
 type PROPS = {
   handleSounds: (name: string) => void;
@@ -28,7 +29,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
         {(typeContent !== "TEXT" && typeContent !== "AGENDA" && typeContent !== "ADMIN") && (
           <div className="container">
             <Image
-              src={`/documents/uicon/appbar.${typeContent.toLowerCase()}.gallery.svg`}
+              src={`${PATH}/documents/uicon/appbar.${typeContent.toLowerCase()}.gallery.svg`}
               alt="svg img"
               width={54}
               height={54} />
@@ -46,7 +47,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
         {typeContent === "IMAGE" && (
           <>
             <Image
-              src={`/documents/img/${CheatSheetImg[Number(content)].name}`}
+              src={`${PATH}/documents/img/${CheatSheetImg[Number(content)].name}`}
               alt={CheatSheetImg[Number(content)].alt}
               width={CheatSheetImg[Number(content)].width}
               height={CheatSheetImg[Number(content)].height}
@@ -58,7 +59,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
           <>
             <Player
               typeContent="VIDEO"
-              playerSrc={`/documents/videos/${CheatSheetVideo[Number(content)].name}`}
+              playerSrc={`${PATH}/documents/videos/${CheatSheetVideo[Number(content)].name}`}
               id={CheatSheetVideo[Number(content)].name}
             />
           </>
@@ -67,7 +68,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
           <>
             <div className="grayscale bg-dark padding-a radius">
               <Image
-                src={`/documents/audio/thumb/audio-thumb.png`}
+                src={`${PATH}/documents/audio/thumb/audio-thumb.png`}
                 alt={""}
                 width={1480}
                 height={1176}
@@ -75,7 +76,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
               />
               <Player
                 typeContent="MUSIC"
-                playerSrc={`/documents/audio/${CheatSheetMusic[Number(content)].name}`}
+                playerSrc={`${PATH}/documents/audio/${CheatSheetMusic[Number(content)].name}`}
                 id={CheatSheetMusic[Number(content)].name}
               />
             </div>

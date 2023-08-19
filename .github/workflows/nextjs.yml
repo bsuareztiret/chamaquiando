@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Copy Public Folder
-        run: cp -r public/ .next/chamaquiando
+        run: cp -r public/ .next/
       - name: Detect package manager
         id: detect-package-manager
         run: |
