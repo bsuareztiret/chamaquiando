@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { NextPage } from 'next';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
+import { PATH } from '../../utils/constants';
 
 const LoginPage: NextPage = () => {
 
@@ -16,7 +17,7 @@ const LoginPage: NextPage = () => {
       username,
       password
     }
-    axios.post("/api/login/", user).then((e) => {
+    axios.post(`${PATH}/api/login/`, user).then((e) => {
       push("/admin");
     })
 

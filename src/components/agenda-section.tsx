@@ -3,6 +3,7 @@ import { Agenda } from "../../types/db/agenda";
 import Card from "./card";
 import axios from "axios";
 import Loading from "./loading";
+import { PATH } from "../../utils/constants";
 
 const AgendaSection = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -10,7 +11,7 @@ const AgendaSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('/api/agendas/');
+        const response = await axios.get(`${PATH}/api/agendas/`);
         setSoutableau(splitInRowOf(Object.values(response.data), 3));
         setIsLoading(false);
       } catch (error) {

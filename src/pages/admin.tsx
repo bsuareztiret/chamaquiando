@@ -3,6 +3,7 @@ import { FormEvent, useState } from "react"
 import { IAgenda } from "../../models/agenda";
 import AuthLayout from "@/components/auth-layout";
 import Card from "@/components/card";
+import { PATH } from "../../utils/constants";
 
 type Agenda = {
   _id: string,
@@ -24,11 +25,11 @@ const Admin = () => {
       address,
       description
     }
-    axios.post("/api/agendas/", agendaObject).then((e) => alert(e.data))
+    axios.post(`${PATH}/api/agendas/`, agendaObject).then((e) => alert(e.data))
   }
 
   const getAgenda = () => {
-    axios.get("/api/agendas/").then((e) => {
+    axios.get(`${PATH}/api/agendas/`).then((e) => {
       const tmpArray: Agenda[] = [];
       e.data.agendas.map((f: IAgenda) => tmpArray.push({ _id: String(f._id), date: f.date, address: f.address, description: f.description }))
       setAgendas(tmpArray);
@@ -40,7 +41,7 @@ const Admin = () => {
   }
 
   const remove = (agenda: Agenda) => {
-    axios.delete(`/api/agendas/`, { params: { id: agenda._id } }).then((e) => {
+    axios.delete(`${PATH}/api/agendas/`, { params: { id: agenda._id } }).then((e) => {
       console.log("remove", agenda._id);
     })
   }
