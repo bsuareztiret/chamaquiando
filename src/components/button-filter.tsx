@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
+import { PATH } from "../../utils/constants";
 
 type PROPS = {
   selected: "VIDEO" | "MUSIC" | "IMAGE" | "ALL",
@@ -13,7 +14,7 @@ const ButtonFilter: FC<PROPS> = ({ selected, typeContent, handleFilterButton }) 
       {typeContent === "IMAGE" && (
         <div className="split">
           <Image
-            src={`/documents/uicon/appbar.image.gallery.svg`}
+            src={`${PATH}/documents/uicon/appbar.image.gallery.svg`}
             alt="svg img"
             width={35}
             height={35} />
@@ -22,7 +23,7 @@ const ButtonFilter: FC<PROPS> = ({ selected, typeContent, handleFilterButton }) 
       {typeContent === "MUSIC" && (
         <div className="split">
           <Image
-            src={`/documents/uicon/appbar.music.gallery.svg`}
+            src={`${PATH}/documents/uicon/appbar.music.gallery.svg`}
             alt="svg img"
             width={35}
             height={35} />
@@ -31,7 +32,7 @@ const ButtonFilter: FC<PROPS> = ({ selected, typeContent, handleFilterButton }) 
       {typeContent === "VIDEO" && (
         <div className="split">
           <Image
-            src={`/documents/uicon/appbar.video.gallery.svg`}
+            src={`${PATH}/documents/uicon/appbar.video.gallery.svg`}
             alt="svg img"
             width={35}
             height={35} />
@@ -40,17 +41,17 @@ const ButtonFilter: FC<PROPS> = ({ selected, typeContent, handleFilterButton }) 
       {typeContent === "ALL" && (
         <div className="split">
           <Image
-            src={`/documents/uicon/appbar.image.gallery.svg`}
+            src={`${PATH}/documents/uicon/appbar.image.gallery.svg`}
             alt="svg img"
             width={35}
             height={35} />
           <Image
-            src={`/documents/uicon/appbar.music.gallery.svg`}
+            src={`${PATH}/documents/uicon/appbar.music.gallery.svg`}
             alt="svg img"
             width={35}
             height={35} />
           <Image
-            src={`/documents/uicon/appbar.video.gallery.svg`}
+            src={`${PATH}/documents/uicon/appbar.video.gallery.svg`}
             alt="svg img"
             width={35}
             height={35} />
