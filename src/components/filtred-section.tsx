@@ -5,12 +5,11 @@ import { CheatSheetMusic } from "../helper/cheat-sheat-music";
 import { CheatSheetVideo } from "../helper/cheat-sheat-video";
 
 type PROPS = {
-  playableName: string,
   setName: (name: string) => void,
   typeContent: "VIDEO" | "MUSIC" | "IMAGE" | "ALL",
 }
 
-const FiltredSection: FC<PROPS> = ({ typeContent, playableName, setName }) => {
+const FiltredSection: FC<PROPS> = ({ typeContent, setName }) => {
 
   const splitInRowOf = (array: any, chunkSize: number) => {
     const chunkedArray = [];
