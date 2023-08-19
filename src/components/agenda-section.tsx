@@ -10,7 +10,7 @@ const AgendaSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('/api//agendas/');
+        const response = await axios.get('/api/agendas/');
         setSoutableau(splitInRowOf(Object.values(response.data), 3));
         setIsLoading(false);
       } catch (error) {
