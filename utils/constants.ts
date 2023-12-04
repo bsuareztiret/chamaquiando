@@ -4,4 +4,5 @@ export const SALT_ROUNDS = 10;
 export const PHONE = "+32 475 39 78 68";
 export const MAIL = "chamaquiando@gmail.com"
 export const PATH = process.env.NEXT_PUBLIC_ENVIRO === "dev" ? "" : "/chamaquiando"
+export const DOMAIN_NAME = "https://bsuareztiret.github.io/chamaquiando/";
  

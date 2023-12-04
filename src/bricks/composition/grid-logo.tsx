@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PATH } from "../../../utils/constants"
+import { DOMAIN_NAME, PATH } from "../../../utils/constants"
 
 const SectionLogo = () => {
   return (
@@ -42,13 +42,15 @@ const SectionLogo = () => {
         />
       </div>
       <div className="logo-hor">
-        <Image
-          src={`${PATH}/documents/uicon/custom/mainLogo_c.png`}
-          alt={"something"}
-          width={395}
-          height={232}
-          style={{ width: '100%' }}
-        />
+        <a href={DOMAIN_NAME}>
+          <Image
+            src={`${PATH}/documents/uicon/custom/mainLogo_c.png`}
+            alt={"something"}
+            width={395}
+            height={232}
+            style={{ width: '100%' }}
+          />
+        </a>
       </div>
     </div>
   )

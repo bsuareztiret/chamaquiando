@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { PATH } from "../../../utils/constants"
+import { DOMAIN_NAME, PATH } from "../../../utils/constants"
 
 const SectionHeader = () => {
   return (
     <div className="grid-header">
       <div className="container-split">
-        <a className="breathe-spacing" href="http://localhost:3000/" >
+        <a className="breathe-spacing" href={DOMAIN_NAME} >
           <Image
             className="container"
             src={`${PATH}/documents/uicon/custom/mainLogo_c.png`}
