@@ -21,7 +21,7 @@ const TitleImageSection = () => {
 
   return (
     <AfterServerSideRendering>
-      <section className="bg-dark">
+      <section className="bg-light">
         <div className="container">
           <ButtonFilter selected={selectedValue} typeContent="ALL" handleFilterButton={handleFilterButton} />
           <ButtonFilter selected={selectedValue} typeContent="IMAGE" handleFilterButton={handleFilterButton} />

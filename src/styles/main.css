@@ -1,9 +1,9 @@
 :root {
-  --clr-primary-200: #f3eed9;
-  --clr-primary-400: red;
+  --light-s: #fbf5f7;
+  --light-m: #b0a2a8;
+  --light-l: #665c60;
 
-  --clr-neutral-100: #fff;
-  --clr-neutral-900: #222c2a;
+  --dark-s: #222021;
 
   --ff-primary: "Roboto", sans-serif;
   --ff-accent: "Playfair Display", serif;
@@ -39,7 +39,7 @@ p {
 h1,
 h2,
 h3 {
-  color: var(--clr-primary-400);
+  color: var(--dark-m);
   font-family: var(--ff-accent);
   font-weight: 900;
   line-height: 1;
@@ -73,7 +73,7 @@ section {
 
 .container {
   margin-inline: auto;
-  width: min(90%, 70.5rem);
+  width: min(95%, 110.5rem);
 }
 
 .split {
@@ -84,7 +84,7 @@ section {
 @media (min-width: 60em) {
   .split {
     flex-direction: row;
-    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
   }
 
   .split > * {
@@ -100,31 +100,33 @@ section {
   max-width: 34rem;
 }
 
+/* BAACKGROUND */
+
 .bg-light {
-  background-color: var(--clr-primary-200);
+  background-color: var(--light-s);
 }
 
 .bg-primary {
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-primary-400);
+  color: var(--dark-s);
+  background-color: var(--light-m);
 }
 
 .bg-dark {
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-neutral-900);
+  color: var(--light-s);
+  background-color: var(--dark-s);
 }
 
 .bg-primary h2,
 .bg-dark h2 {
-  color: var(--clr-primary-200);
+  color: var(--light-l);
 }
 
 .bg-dark h3 {
-  color: var(--clr-primary-400);
+  color: var(--light-m);
 }
 
 .color-dark {
-  color: var(--clr-neutral-900);
+  color: var(--light-s);
   font-size: 1rem;
 }
 
@@ -154,8 +156,9 @@ section {
   top: 0;
   right: 0;
   left: 0;
+  color: var(--light-s);
   /* text-transform: uppercase; */
-  background-color: var(--clr-primary-200);
+  background-color: var(--dark-s);
   border-bottom: 2px solid #000;
   padding: 1px 0 4px 0;
   /* font-style: italic; */
@@ -175,8 +178,8 @@ section {
   height: 36px;
   display: flex;
   justify-content: flex-start;
-  color: var(--clr-primary-400);
-  background-color: var(--clr-neutral-900);
+  color: var(--primary-m);
+  background-color: var(--primary-l);
   font-family: var(--ff-accent);
 }
 
@@ -204,7 +207,7 @@ section {
 }
 
 .marquee a {
-    color: var(--clr-neutral-900);
+    color: var(--primary-l);
     text-decoration: none;
 }
 
@@ -220,14 +223,14 @@ section {
 
 .card {
   /* background-color:  var(--clr-primary-200);; */
-  border-radius: 5px;
-  padding: 20px;
-  margin: 10px;
+  border-radius: 1px;
+  padding: 10px;
+  margin: 4px;
 }
 
 .card-title {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .card-content {
@@ -236,7 +239,7 @@ section {
 
 .card-description {
   font-size: 14px;
-  color:  var(--clr-neutral-900);;
+  color:  var(--primary-s);;
 }
 
 /* Styles pour la responsivité */

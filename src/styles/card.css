@@ -1,0 +1,17 @@
+.design-card {
+  background-color: var(--light-m);
+  border: 1px solid var(--dark-m);
+  padding: 4px;
+}
+
+.picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 100%;
+}

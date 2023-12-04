@@ -23,6 +23,11 @@ export const CheatSheetImg = [
   {title: "", index: 21,name: "Chama22.jpg", alt: "picture of Chama, very hot!", width: 640, height: 480 },
   {title: "", index: 22,name: "Chama23.jpg", alt: "picture of Chama, all in black today", width: 531, height: 298 },
   {title: "", index: 23,name: "Chama24.jpg", alt: "picture of Chama, screaming with the boys", width: 960, height: 640 },
+  {title: "", index: 24,name: "Chama25.jpg", alt: "picture of Chama, what happend?!", width: 960, height: 640 },
+  // {title: "", index: 25,name: "agenda-bruxelles.png", alt: "bruxelles bours", width: 960, height: 640 },
+  // {title: "", index: 26,name: "agenda-wallonie.png", alt: "picture of liege", width: 960, height: 640 },
+  // {title: "", index: 27,name: "agenda-flandre.png", alt: "picture from belgian coast", width: 960, height: 640 },
+  // {title: "", index: 28,name: "agenda-europe.png", alt: "picture from tcheky", width: 960, height: 640 },
   // {index: 24,name: "Chama25.jpg", alt: "picture of Chama, what happend?!", width: 960, height: 640 },
   // {index: 25,name: "Chama0.jpg", alt: "picture of Chama, solo", width: 240, height: 319 },
 

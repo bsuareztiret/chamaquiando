@@ -57,7 +57,7 @@ const FiltredSection: FC<PROPS> = ({ typeContent, setName }) => {
               title={element.title}
               content={element.index}
               typeContent="MUSIC" description={""}
-              bg="light"
+              bg="primary"
             />
           ))}
         </div>
@@ -71,7 +71,7 @@ const FiltredSection: FC<PROPS> = ({ typeContent, setName }) => {
               title={element.title}
               content={element.index}
               typeContent="IMAGE" description={element.alt}
-              bg="light"
+              bg="primary"
             />
           ))}
         </div>
@@ -85,7 +85,7 @@ const FiltredSection: FC<PROPS> = ({ typeContent, setName }) => {
               title={element.title}
               content={element.index}
               typeContent="VIDEO" description={element.alt}
-              bg="light"
+              bg="primary"
             />
           ))}
         </div>
@@ -99,7 +99,7 @@ const FiltredSection: FC<PROPS> = ({ typeContent, setName }) => {
               title={element.title}
               content={element.index}
               typeContent={checkTypeContent(element)} description={element.alt}
-              bg="light"
+              bg="primary"
             />
           ))}
         </div>

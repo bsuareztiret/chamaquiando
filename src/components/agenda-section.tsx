@@ -3,23 +3,22 @@ import { Agenda } from "../../types/db/agenda";
 import Card from "./card";
 import axios from "axios";
 import Loading from "./loading";
-import { PATH } from "../../utils/constants";
 
 const AgendaSection = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(`${PATH}/api/agendas/`);
-        setSoutableau(splitInRowOf(Object.values(response.data), 3));
-        setIsLoading(false);
-      } catch (error) {
-        console.error('Error fetching agendas:', error);
-      }
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get('/api//agendas/');
+  //       setSoutableau(splitInRowOf(Object.values(response.data), 3));
+  //       setIsLoading(false);
+  //     } catch (error) {
+  //       console.error('Error fetching agendas:', error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
   const splitInRowOf = (array: Agenda[], chunkSize: number) => {
     const chunkedArray = [];
@@ -33,38 +32,88 @@ const AgendaSection = () => {
     return response;
   }
 
-  const [sousTableau, setSoutableau] = useState<Agenda[]>([]);
+  const [sousTableau, setSoutableau] = useState<Agenda[]>([{
+    _id: "ETRYTrh",
+    date: "30-11-23",
+    address: "rue de l'amour, 26, 1000 bruxelles",
+    description: "salut la mifs"
+  }, {
+    _id: "ETRYTrhdfsf",
+    date: "30-11-23",
+    address: "rue de l'amour, 26, 1000 bruxelles",
+    description: "salut la mifs"
+  }, {
+    _id: "ETRYTrhdfsf",
+    date: "30-11-23",
+    address: "rue de l'amour, 26, 1000 bruxelles",
+    description: "salut la mifs"
+  }, {
+    _id: "ETRYTrh",
+    date: "30-11-23",
+    address: "rue de l'amour, 26, 1000 bruxelles",
+    description: "salut la mifs"
+  }, {
+    _id: "ETRYTrhdfsf",
+    date: "30-11-23",
+    address: "rue de l'amour, 26, 1000 bruxelles",
+    description: "salut la mifs"
+  }, {
+    _id: "ETRYTrh",
+    date: "30-11-23",
+    address: "rue de l'amour, 26, 1000 bruxelles",
+    description: "salut la mifs"
+  }, {
+    _id: "ETRYTrhdfsf",
+    date: "30-11-23",
+    address: "rue de l'amour, 26, 1000 bruxelles",
+    description: "salut la mifs"
+  }, {
+    _id: "ETRYTrhdfsf",
+    date: "30-11-23",
+    address: "rue de l'amour, 26, 1000 bruxelles",
+    description: "salut la mifs"
+  }, {
+    _id: "ETRYTrh",
+    date: "30-11-23",
+    address: "rue de l'amour, 26, 1000 bruxelles",
+    description: "salut la mifs"
+  }, {
+    _id: "ETRYTrhdfsf",
+    date: "30-11-23",
+    address: "rue de l'amour, 26, 1000 bruxelles",
+    description: "salut la mifs"
+  }]);
 
 
-  if (isLoading) {
-    return (
-      <section className="bg-light">
+  // if (isLoading) {
+  // return (
+  //   <section className="bg-light">
+  //     <h2 className="text-center ">Agenda</h2>
+  //     <Loading />
+  //   </section>
+  // )
+  // } else {
+  return (
+    <section className="bg-light">
+      <div className="container">
         <h2 className="text-center ">Agenda</h2>
-        <Loading />
-      </section>
-    )
-  } else {
-    return (
-      <section className="bg-light">
-        <div className="container">
-          <h2 className="text-center ">Agenda</h2>
-          <div className="split">
-            {sousTableau[0].map!((element: Agenda, elementIndex: number) => (
-              <Card
-                handleSounds={() => { }}
-                key={elementIndex}
-                title={element.date}
-                content={element.description}
-                typeContent="AGENDA"
-                description={element.address}
-                bg="dark"
-              />
-            ))}
-          </div>
+        <div className="grid-split">
+          {sousTableau.map!((element: Agenda, elementIndex: number) => (
+            <Card
+              handleSounds={() => { }}
+              key={elementIndex}
+              title={element.date}
+              content={element.description}
+              typeContent="AGENDA"
+              description={element.address}
+              bg="dark"
+            />
+          ))}
         </div>
-      </section>
-    )
-  }
+      </div>
+    </section>
+  )
+  // }
 
 }
 
