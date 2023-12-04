@@ -20,69 +20,69 @@ const AgendaSection = () => {
   //   fetchData();
   // }, []);
 
-  const splitInRowOf = (array: Agenda[], chunkSize: number) => {
-    const chunkedArray = [];
-    let index = 0;
-    while (index < array.length) {
-      chunkedArray.push(array.slice(index, index + chunkSize));
-      index += chunkSize;
-    }
-    const response = chunkedArray[0]
-    setSoutableau(response);
-    return response;
-  }
+  // const splitInRowOf = (array: Agenda[], chunkSize: number) => {
+  //   const chunkedArray = [];
+  //   let index = 0;
+  //   while (index < array.length) {
+  //     chunkedArray.push(array.slice(index, index + chunkSize));
+  //     index += chunkSize;
+  //   }
+  //   const response = chunkedArray[0]
+  //   setSoutableau(response);
+  //   return response;
+  // }
 
-  const [sousTableau, setSoutableau] = useState<Agenda[]>([{
-    _id: "ETRYTrh",
-    date: "30-11-23",
-    address: "rue de l'amour, 26, 1000 bruxelles",
-    description: "salut la mifs"
-  }, {
-    _id: "ETRYTrhdfsf",
-    date: "30-11-23",
-    address: "rue de l'amour, 26, 1000 bruxelles",
-    description: "salut la mifs"
-  }, {
-    _id: "ETRYTrhdfsf",
-    date: "30-11-23",
-    address: "rue de l'amour, 26, 1000 bruxelles",
-    description: "salut la mifs"
-  }, {
-    _id: "ETRYTrh",
-    date: "30-11-23",
-    address: "rue de l'amour, 26, 1000 bruxelles",
-    description: "salut la mifs"
-  }, {
-    _id: "ETRYTrhdfsf",
-    date: "30-11-23",
-    address: "rue de l'amour, 26, 1000 bruxelles",
-    description: "salut la mifs"
-  }, {
-    _id: "ETRYTrh",
-    date: "30-11-23",
-    address: "rue de l'amour, 26, 1000 bruxelles",
-    description: "salut la mifs"
-  }, {
-    _id: "ETRYTrhdfsf",
-    date: "30-11-23",
-    address: "rue de l'amour, 26, 1000 bruxelles",
-    description: "salut la mifs"
-  }, {
-    _id: "ETRYTrhdfsf",
-    date: "30-11-23",
-    address: "rue de l'amour, 26, 1000 bruxelles",
-    description: "salut la mifs"
-  }, {
-    _id: "ETRYTrh",
-    date: "30-11-23",
-    address: "rue de l'amour, 26, 1000 bruxelles",
-    description: "salut la mifs"
-  }, {
-    _id: "ETRYTrhdfsf",
-    date: "30-11-23",
-    address: "rue de l'amour, 26, 1000 bruxelles",
-    description: "salut la mifs"
-  }]);
+  // const [sousTableau, setSoutableau] = useState<Agenda[]>([{
+  //   _id: "ETRYTrh",
+  //   date: "30-11-23",
+  //   address: "rue de l'amour, 26, 1000 bruxelles",
+  //   description: "salut la mifs"
+  // }, {
+  //   _id: "ETRYTrhdfsf",
+  //   date: "30-11-23",
+  //   address: "rue de l'amour, 26, 1000 bruxelles",
+  //   description: "salut la mifs"
+  // }, {
+  //   _id: "ETRYTrhdfsf",
+  //   date: "30-11-23",
+  //   address: "rue de l'amour, 26, 1000 bruxelles",
+  //   description: "salut la mifs"
+  // }, {
+  //   _id: "ETRYTrh",
+  //   date: "30-11-23",
+  //   address: "rue de l'amour, 26, 1000 bruxelles",
+  //   description: "salut la mifs"
+  // }, {
+  //   _id: "ETRYTrhdfsf",
+  //   date: "30-11-23",
+  //   address: "rue de l'amour, 26, 1000 bruxelles",
+  //   description: "salut la mifs"
+  // }, {
+  //   _id: "ETRYTrh",
+  //   date: "30-11-23",
+  //   address: "rue de l'amour, 26, 1000 bruxelles",
+  //   description: "salut la mifs"
+  // }, {
+  //   _id: "ETRYTrhdfsf",
+  //   date: "30-11-23",
+  //   address: "rue de l'amour, 26, 1000 bruxelles",
+  //   description: "salut la mifs"
+  // }, {
+  //   _id: "ETRYTrhdfsf",
+  //   date: "30-11-23",
+  //   address: "rue de l'amour, 26, 1000 bruxelles",
+  //   description: "salut la mifs"
+  // }, {
+  //   _id: "ETRYTrh",
+  //   date: "30-11-23",
+  //   address: "rue de l'amour, 26, 1000 bruxelles",
+  //   description: "salut la mifs"
+  // }, {
+  //   _id: "ETRYTrhdfsf",
+  //   date: "30-11-23",
+  //   address: "rue de l'amour, 26, 1000 bruxelles",
+  //   description: "salut la mifs"
+  // }]);
 
 
   // if (isLoading) {
@@ -97,19 +97,6 @@ const AgendaSection = () => {
     <section className="bg-light">
       <div className="container">
         <h2 className="text-center ">Agenda</h2>
-        <div className="grid-split">
-          {sousTableau.map!((element: Agenda, elementIndex: number) => (
-            <Card
-              handleSounds={() => { }}
-              key={elementIndex}
-              title={element.date}
-              content={element.description}
-              typeContent="AGENDA"
-              description={element.address}
-              bg="dark"
-            />
-          ))}
-        </div>
       </div>
     </section>
   )
