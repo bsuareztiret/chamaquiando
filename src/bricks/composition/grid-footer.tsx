@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { PATH } from "../../../utils/constants"
 
 const SectionFooter = () => {
   return (
@@ -6,7 +7,7 @@ const SectionFooter = () => {
       <div className="container-split">
         <Image
           className="container-img"
-          src={`/documents/uicon/custom/footerLogo_c.png`}
+          src={`${PATH}/documents/uicon/custom/footerLogo_c.png`}
           alt={"something"}
           width={1920}
           height={307}

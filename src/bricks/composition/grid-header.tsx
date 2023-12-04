@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { PATH } from "../../../utils/constants"
 
 const SectionHeader = () => {
   return (
@@ -7,7 +8,7 @@ const SectionHeader = () => {
         <a className="breathe-spacing" href="http://localhost:3000/" >
           <Image
             className="container"
-            src={`/documents/uicon/custom/mainLogo_c.png`}
+            src={`${PATH}/documents/uicon/custom/mainLogo_c.png`}
             alt={"something"}
             width={395}
             height={232}

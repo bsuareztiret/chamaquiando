@@ -19,7 +19,7 @@
 //           <h1>{defaultPROPS.title}</h1>
 //           <p>{defaultPROPS.upTitle}</p>
 //           <Image
-//             src={`/documents/img/logo-test.png`}
+//             src={`${PATH}/documents/img/logo-test.png`}
 //             alt={"something"}
 //             width={600}
 //             height={1000}

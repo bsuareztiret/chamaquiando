@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
+import { PATH } from "../../utils/constants"
 
 type PROPS = {
   selected: "VIDEO" | "MUSIC" | "IMAGE" | "ALL",
@@ -13,7 +14,7 @@ const ButtonFilter: FC<PROPS> = ({ selected, typeContent, handleFilterButton }) 
       {typeContent === "IMAGE" && (
         <div className="split-v2">
           <Image
-            src={`/documents/uicon/custom/picto-img_c.png`}
+            src={`${PATH}/documents/uicon/custom/picto-img_c.png`}
             alt="png img"
             width={70
             }
@@ -24,7 +25,7 @@ const ButtonFilter: FC<PROPS> = ({ selected, typeContent, handleFilterButton }) 
       {typeContent === "MUSIC" && (
         <div className="split-v2">
           <Image
-            src={`/documents/uicon/custom/picto-msc_c.png`}
+            src={`${PATH}/documents/uicon/custom/picto-msc_c.png`}
             alt="png img"
             width={70
             }
@@ -35,7 +36,7 @@ const ButtonFilter: FC<PROPS> = ({ selected, typeContent, handleFilterButton }) 
       {typeContent === "VIDEO" && (
         <div className="split-v2">
           <Image
-            src={`/documents/uicon/custom/picto-vdo_c.png`}
+            src={`${PATH}/documents/uicon/custom/picto-vdo_c.png`}
             alt="png img"
             width={70
             }
@@ -46,7 +47,7 @@ const ButtonFilter: FC<PROPS> = ({ selected, typeContent, handleFilterButton }) 
       {typeContent === "ALL" && (
         <div className="split-v2">
           <Image
-            src={`/documents/uicon/custom/picto-all_c.png`}
+            src={`${PATH}/documents/uicon/custom/picto-all_c.png`}
             alt="png img"
             width={70
             }

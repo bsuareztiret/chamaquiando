@@ -33,7 +33,7 @@
 //         {typeContent === "IMAGE" && (
 //           <div className="grid-picture-v2">
 //             <Image
-//               src={`/documents/img/${CheatSheetImg[Number(content)].name}`}
+//               src={`${PATH}/documents/img/${CheatSheetImg[Number(content)].name}`}
 //               alt={CheatSheetImg[Number(content)].alt}
 //               width={CheatSheetImg[Number(content)].width}
 //               height={CheatSheetImg[Number(content)].height}
@@ -45,7 +45,7 @@
 //           <div className="grid-picture-v2">
 //             <Player
 //               typeContent="VIDEO"
-//               playerSrc={`/documents/videos/${CheatSheetVideo[Number(content)].name}`}
+//               playersrc={`${PATH}/documents/videos/${CheatSheetVideo[Number(content)].name}`}
 //               id={CheatSheetVideo[Number(content)].name}
 //             />
 //           </div>
@@ -54,7 +54,7 @@
 //           <div className="grid-picture-v2">
 //             <div className="grayscale bg-dark padding-a radius">
 //               <Image
-//                 src={`/documents/audio/thumb/audio-thumb.png`}
+//                 src={`${PATH}/documents/audio/thumb/audio-thumb.png`}
 //                 alt={""}
 //                 width={1480}
 //                 height={1176}
@@ -62,7 +62,7 @@
 //               />
 //               <Player
 //                 typeContent="MUSIC"
-//                 playerSrc={`/documents/audio/${CheatSheetMusic[Number(content)].name}`}
+//                 playersrc={`${PATH}/documents/audio/${CheatSheetMusic[Number(content)].name}`}
 //                 id={CheatSheetMusic[Number(content)].name}
 //               />
 //             </div>

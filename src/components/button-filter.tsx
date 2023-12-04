@@ -13,7 +13,7 @@
 //       {typeContent === "IMAGE" && (
 //         <div className="split">
 //           <Image
-//             src={`/documents/uicon/appbar.image.gallery.svg`}
+//             src={`${PATH}/documents/uicon/appbar.image.gallery.svg`}
 //             alt="svg img"
 //             width={35}
 //             height={35} />
@@ -22,7 +22,7 @@
 //       {typeContent === "MUSIC" && (
 //         <div className="split">
 //           <Image
-//             src={`/documents/uicon/appbar.music.gallery.svg`}
+//             src={`${PATH}/documents/uicon/appbar.music.gallery.svg`}
 //             alt="svg img"
 //             width={35}
 //             height={35} />
@@ -31,7 +31,7 @@
 //       {typeContent === "VIDEO" && (
 //         <div className="split">
 //           <Image
-//             src={`/documents/uicon/appbar.video.gallery.svg`}
+//             src={`${PATH}/documents/uicon/appbar.video.gallery.svg`}
 //             alt="svg img"
 //             width={35}
 //             height={35} />
@@ -40,17 +40,17 @@
 //       {typeContent === "ALL" && (
 //         <div className="split">
 //           <Image
-//             src={`/documents/uicon/appbar.image.gallery.svg`}
+//             src={`${PATH}/documents/uicon/appbar.image.gallery.svg`}
 //             alt="svg img"
 //             width={35}
 //             height={35} />
 //           <Image
-//             src={`/documents/uicon/appbar.music.gallery.svg`}
+//             src={`${PATH}/documents/uicon/appbar.music.gallery.svg`}
 //             alt="svg img"
 //             width={35}
 //             height={35} />
 //           <Image
-//             src={`/documents/uicon/appbar.video.gallery.svg`}
+//             src={`${PATH}/documents/uicon/appbar.video.gallery.svg`}
 //             alt="svg img"
 //             width={35}
 //             height={35} />

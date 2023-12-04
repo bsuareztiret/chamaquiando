@@ -6,6 +6,7 @@ import { CheatSheetYoutube } from "../helper/cheat-sheat-youtube";
 
 import { Agenda } from "../../types/db/agenda";
 import Player from "./player";
+import { PATH } from "../../utils/constants"
 
 type PROPS = {
   handleSounds: (name: string) => void;
@@ -39,7 +40,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
         {(typeContent === "IMAGE") && (
           <div className="grid-picture-v2">
             <Image
-              src={`/documents/img/${CheatSheetImg[Number(content)].name}`}
+              src={`${PATH}/documents/img/${CheatSheetImg[Number(content)].name}`}
               alt={CheatSheetImg[Number(content)].alt}
               width={CheatSheetImg[Number(content)].width}
               height={CheatSheetImg[Number(content)].height}
@@ -51,7 +52,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
           <a href={CheatSheetYoutube[Number(content)].YTLink} target="_blank">
             <div className="grid-picture-v2">
               <Image
-                src={`/documents/img-video/${CheatSheetYoutube[Number(content)].name}`}
+                src={`${PATH}/documents/img-video/${CheatSheetYoutube[Number(content)].name}`}
                 alt={""}
                 width={1480}
                 height={1176}
@@ -64,7 +65,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
           <div>
             <div className="grid-picture-v2 grayscale">
               <Image
-                src={`/documents/audio/thumb/audio-thumb.png`}
+                src={`${PATH}/documents/audio/thumb/audio-thumb.png`}
                 alt={""}
                 width={1480}
                 height={1176}
@@ -77,7 +78,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
           {(typeContent === "MUSIC" || typeContent === "VIDEO" || typeContent === "IMAGE") && (
             <>
               <Image
-                src={`/documents/uicon/custom/picto-${choosePicto(typeContent)}_c.png`}
+                src={`${PATH}/documents/uicon/custom/picto-${choosePicto(typeContent)}_c.png`}
                 alt="png img"
                 width={70}
                 height={70} />
@@ -94,7 +95,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
             <>
               <Player
                 typeContent="MUSIC"
-                playerSrc={`/documents/audio/${CheatSheetMusic[Number(content)].name}`}
+                playersrc={`${PATH}/documents/audio/${CheatSheetMusic[Number(content)].name}`}
                 id={CheatSheetMusic[Number(content)].name}
               />
             </>
