@@ -9,9 +9,6 @@ import SectionFooter from "@/bricks/composition/grid-footer";
 import SectionLogo from "@/bricks/composition/grid-logo";
 import FiltredSection from "@/bricks/composition/grid-content";
 
-
-
-
 const Index = () => {
   return (
     <Grid>
