@@ -95,7 +95,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
             <>
               <Player
                 typeContent="MUSIC"
-                playersrc={`${PATH}/documents/audio/${CheatSheetMusic[Number(content)].name}`}
+                playerSrc={`${PATH}/documents/audio/${CheatSheetMusic[Number(content)].name}`}
                 id={CheatSheetMusic[Number(content)].name}
               />
             </>
