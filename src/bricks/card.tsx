@@ -10,7 +10,7 @@ import { PATH } from "../../utils/constants"
 
 type PROPS = {
   handleSounds: (name: string) => void;
-  title: string;
+  name: string;
   content: string;
   typeContent: "VIDEO" | "MUSIC" | "TEXT" | "IMAGE" | "AGENDA" | "ADMIN"
   description: string;
@@ -30,7 +30,7 @@ const choosePicto = (s: "VIDEO" | "MUSIC" | "IMAGE" | "ALL") => {
   return "all"
 }
 
-const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description, typeContent }) => {
+const Card: FC<PROPS> = ({ bg, agenda, handleSounds, name, content, description, typeContent }) => {
   // if (typeContent === "VIDEO") {
   //   console.log("CARD: typecontentVIDEO", CheatSheetYoutube[Number(content)].imgLink)
   // }
@@ -40,8 +40,8 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
         {(typeContent === "IMAGE") && (
           <div className="grid-picture-v2">
             <Image
-              src={`${PATH}/documents/img/${CheatSheetImg[Number(content)].name}`}
-              alt={CheatSheetImg[Number(content)].alt}
+              src={`${PATH}/documents/img/${name}`}
+              alt={description}
               width={CheatSheetImg[Number(content)].width}
               height={CheatSheetImg[Number(content)].height}
               style={{ width: '100%', height: 'auto' }}
@@ -52,7 +52,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, title, content, description
           <a href={CheatSheetYoutube[Number(content)].YTLink} target="_blank">
             <div className="grid-picture-v2">
               <Image
-                src={`${PATH}/documents/img-video/${CheatSheetYoutube[Number(content)].name}`}
+                src={`${PATH}/documents/img-video/${name}`}
                 alt={""}
                 width={1480}
                 height={1176}

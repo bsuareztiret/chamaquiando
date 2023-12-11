@@ -1,3 +1,14 @@
+.agenda-bio {
+  bottom: 20px;
+  left: 20px;
+  border-radius: 1px;
+  /* width: 440px; */
+  background: var(--dark-m);
+  border: 1px solid;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
 .agenda-box {
     bottom: 20px;
     left: 20px;
@@ -15,6 +26,15 @@
   border-bottom: 1px solid var(--dark-m);
   margin-bottom: 10px;
   align-items: center;
+}
+
+.agenda-bio-title {
+  font-family: var(--ff-accent);
+  color: var(--light-l);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 20px;
 }
 
 .agenda-box-title {

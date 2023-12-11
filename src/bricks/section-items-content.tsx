@@ -43,60 +43,60 @@ const FiltredSection: FC<PROPS> = ({ typeContent, setName }) => {
     return "TEXT"
   }
 
-  const [sousTableauxImg] = useState(splitInRowOf(shuffleArray(CheatSheetImg), 3));
-  const [sousTableauxMusic] = useState(splitInRowOf(shuffleArray(CheatSheetMusic), 3));
-  const [sousTableauxVideo] = useState(splitInRowOf(shuffleArray(CheatSheetYoutube), 3));
-  const [sousTableauxAll] = useState(splitInRowOf(shuffleArray(CheatSheetImg.concat(CheatSheetMusic, CheatSheetYoutube)), 3));
+  const [sousTableauxImg] = useState(shuffleArray(CheatSheetImg));
+  const [sousTableauxMusic] = useState(shuffleArray(CheatSheetMusic));
+  const [sousTableauxVideo] = useState(shuffleArray(CheatSheetYoutube));
+  const [sousTableauxAll] = useState(shuffleArray(CheatSheetImg.concat(CheatSheetMusic, CheatSheetYoutube)));
 
   return (
     <>
-      {typeContent === "MUSIC" && sousTableauxMusic.map((sousTableau, index) => (
-        sousTableau.map((element: any, elementIndex: number) => (
-          <Card
-            handleSounds={setName}
-            key={elementIndex}
-            title={element.title}
-            content={element.index}
-            typeContent="MUSIC" description={""}
-            bg="primary"
-          />
-        ))
+      {typeContent === "MUSIC" && sousTableauxMusic.map((element, index) => (
+        // sousTableau.map((element: any, elementIndex: number) => (
+        <Card
+          handleSounds={setName}
+          key={index}
+          name={element.name}
+          content={element.index}
+          typeContent="MUSIC" description={""}
+          bg="primary"
+        />
+        // ))
       ))}
-      {typeContent === "IMAGE" && sousTableauxImg.map((sousTableau, index) => (
-        sousTableau.map((element: any, elementIndex: number) => (
-          <Card
-            handleSounds={setName}
-            key={elementIndex}
-            title={element.title}
-            content={element.index}
-            typeContent="IMAGE" description={element.alt}
-            bg="primary"
-          />
-        ))
+      {typeContent === "IMAGE" && sousTableauxImg.map((element, index) => (
+        // sousTableau.map((element: any, elementIndex: number) => (
+        <Card
+          handleSounds={setName}
+          key={index}
+          name={element.name}
+          content={element.index}
+          typeContent="IMAGE" description={element.alt}
+          bg="primary"
+        />
+        // ))
       ))}
-      {typeContent === "VIDEO" && sousTableauxVideo.map((sousTableau, index) => (
-        sousTableau.map((element: any, elementIndex: number) => (
-          <Card
-            handleSounds={setName}
-            key={elementIndex}
-            title={element.title}
-            content={element.index}
-            typeContent="VIDEO" description={element.alt}
-            bg="primary"
-          />
-        ))
+      {typeContent === "VIDEO" && sousTableauxVideo.map((element, index) => (
+        // sousTableau.map((element: any, elementIndex: number) => (
+        <Card
+          handleSounds={setName}
+          key={index}
+          name={element.name}
+          content={element.index}
+          typeContent="VIDEO" description={element.alt}
+          bg="primary"
+        />
+        // ))
       ))}
-      {typeContent === "ALL" && sousTableauxAll.map((sousTableau, index) => (
-        sousTableau.map((element: any, elementIndex: number) => (
-          <Card
-            handleSounds={setName}
-            key={elementIndex}
-            title={element.title}
-            content={element.index}
-            typeContent={checkTypeContent(element)} description={element.alt}
-            bg="primary"
-          />
-        ))
+      {typeContent === "ALL" && sousTableauxAll.map((element, index) => (
+        // sousTableau.map((element: any, elementIndex: number) => (
+        <Card
+          handleSounds={setName}
+          key={index}
+          name={element.name}
+          content={element.index}
+          typeContent={checkTypeContent(element)} description={element.alt}
+          bg="primary"
+        />
+        // ))
       ))}
     </>
   )

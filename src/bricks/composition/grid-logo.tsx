@@ -6,35 +6,35 @@ const SectionLogo = () => {
     <div className="grid-logo grid-v2">
       <div className="logo-ver">
         <Image
-          src={`${PATH}/documents/uicon/custom/secondaryLogo_c.png`}
+          src={`${PATH}/documents/uicon/custom/secondaryLogo_Rc.png`}
           alt={"something"}
           width={1092}
           height={100}
           style={{ width: '100%' }}
         />
         <Image
-          src={`${PATH}/documents/uicon/custom/secondaryLogo_c.png`}
+          src={`${PATH}/documents/uicon/custom/secondaryLogo_Rc.png`}
           alt={"something"}
           width={1092}
           height={100}
           style={{ width: '100%' }}
         />
         <Image
-          src={`${PATH}/documents/uicon/custom/secondaryLogo_c.png`}
+          src={`${PATH}/documents/uicon/custom/secondaryLogo_Rc.png`}
           alt={"something"}
           width={1092}
           height={100}
           style={{ width: '100%' }}
         />
         <Image
-          src={`${PATH}/documents/uicon/custom/secondaryLogo_c.png`}
+          src={`${PATH}/documents/uicon/custom/secondaryLogo_Rc.png`}
           alt={"something"}
           width={1092}
           height={100}
           style={{ width: '100%' }}
         />
         <Image
-          src={`${PATH}/documents/uicon/custom/secondaryLogo_c.png`}
+          src={`${PATH}/documents/uicon/custom/secondaryLogo_Rc.png`}
           alt={"something"}
           width={1092}
           height={100}
@@ -44,7 +44,7 @@ const SectionLogo = () => {
       <div className="logo-hor">
         <a href={DOMAIN_NAME}>
           <Image
-            src={`${PATH}/documents/uicon/custom/mainLogo_c.png`}
+            src={`${PATH}/documents/uicon/custom/mainLogo_Rc.png`}
             alt={"something"}
             width={395}
             height={232}

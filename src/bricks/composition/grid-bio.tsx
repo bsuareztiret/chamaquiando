@@ -11,29 +11,29 @@ const SectionBio = () => {
       <div className="container grid-item">
         {/* <h2 className="breathe-spacing">{"Biographie"}</h2> */}
         <div className="split-v2">
-          <div className="agenda-box">
+          <div className="agenda-bio">
             <div className="agenda-box-top">
-              <h3 className="agenda-box-title">Español</h3>
+              <h3 className="agenda-bio-title">Español</h3>
             </div>
             <div>{defaultPROPS.blocOne}</div>
           </div>
-          <div className="agenda-box">
+          <div className="agenda-bio">
             <div className="agenda-box-top">
-              <h3 className="agenda-box-title">Français</h3>
+              <h3 className="agenda-bio-title">Français</h3>
             </div>
             <div>{defaultPROPS.blocTwo}</div>
           </div>
         </div>
         <div className="split-v2">
-          <div className="agenda-box">
+          <div className="agenda-bio">
             <div className="agenda-box-top">
-              <h3 className="agenda-box-title">Neederlands</h3>
+              <h3 className="agenda-bio-title">Neederlands</h3>
             </div>
             <div className="">{defaultPROPS.blocThree}</div>
           </div>
-          <div className="agenda-box">
+          <div className="agenda-bio">
             <div className="agenda-box-top">
-              <h3 className="agenda-box-title">English</h3>
+              <h3 className="agenda-bio-title">English</h3>
             </div>
             <div>{defaultPROPS.blocFour}</div>
           </div>

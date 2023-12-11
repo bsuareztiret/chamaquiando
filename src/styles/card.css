@@ -1,6 +1,7 @@
 .design-card {
   background-color: var(--light-m);
-  border: 1px solid var(--dark-m);
+  color: var(--dark-m);
+  /* border: 1px solid var(--dark-m); */
   padding: 4px;
 }
 

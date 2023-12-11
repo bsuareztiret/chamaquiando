@@ -8,7 +8,7 @@ const SectionHeader = () => {
         <a className="breathe-spacing" href={DOMAIN_NAME} >
           <Image
             className="container"
-            src={`${PATH}/documents/uicon/custom/mainLogo_c.png`}
+            src={`${PATH}/documents/uicon/custom/mainLogo_Rc.png`}
             alt={"something"}
             width={395}
             height={232}

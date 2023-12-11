@@ -1,11 +1,11 @@
 :root {
   --light-s: #E9C46A;
-  --light-m: #F4A261;
-  --light-l: #ef9750;
+  --light-m: #792222;
+  --light-l: #470f0f;
   
 
   --dark-s: #2A9D8F;
-  --dark-m: #264653;
+  --dark-m: #c8bf19;
 
   --ff-primary: "Roboto", sans-serif;
   --ff-accent: "Playfair Display", serif;
