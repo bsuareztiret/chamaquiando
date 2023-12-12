@@ -80,7 +80,7 @@ const FiltredSection: FC<PROPS> = ({ typeContent, setName }) => {
           handleSounds={setName}
           key={index}
           name={element.name}
-          content={element.index}
+          content={element.YTLink}
           typeContent="VIDEO" description={element.alt}
           bg="primary"
         />

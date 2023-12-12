@@ -49,7 +49,7 @@ const Card: FC<PROPS> = ({ bg, agenda, handleSounds, name, content, description,
           </div>
         )}
         {typeContent === "VIDEO" && (
-          <a href={CheatSheetYoutube[Number(content)].YTLink} target="_blank">
+          <a href={content} target="_blank">
             <div className="grid-picture-v2">
               <Image
                 src={`${PATH}/documents/img-video/${name}`}
