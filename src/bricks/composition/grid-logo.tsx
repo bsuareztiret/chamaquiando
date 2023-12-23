@@ -19,27 +19,6 @@ const SectionLogo = () => {
           height={100}
           style={{ width: '100%' }}
         />
-        <Image
-          src={`${PATH}/documents/uicon/custom/secondaryLogo_Rc.png`}
-          alt={"something"}
-          width={1092}
-          height={100}
-          style={{ width: '100%' }}
-        />
-        <Image
-          src={`${PATH}/documents/uicon/custom/secondaryLogo_Rc.png`}
-          alt={"something"}
-          width={1092}
-          height={100}
-          style={{ width: '100%' }}
-        />
-        <Image
-          src={`${PATH}/documents/uicon/custom/secondaryLogo_Rc.png`}
-          alt={"something"}
-          width={1092}
-          height={100}
-          style={{ width: '100%' }}
-        />
       </div>
       <div className="logo-hor">
         <a href={DOMAIN_NAME}>
