@@ -22,7 +22,7 @@ export const CheatSheetImg = [
   {title: "", index: 20,name: "Chama21.jpg", alt: "Fiesta a la Cambre", width: 640, height: 480 },
   {title: "", index: 21,name: "Chama22.jpg", alt: "Fiesta at Ixelles", width: 640, height: 480 },
   {title: "", index: 22,name: "Chama23.jpg", alt: "Nico, Patrick, Chama", width: 531, height: 298 },
-  {title: "", index: 23,name: "Chama24.jpg", alt: "Chama at Hasselt", width: 960, height: 640 },
+  {title: "", index: 23,name: "Chama24.jpg", alt: "Chama at Alost", width: 960, height: 640 },
   {title: "", index: 24,name: "Chama25.jpg", alt: "Chama montre le chemin", width: 960, height: 640 },
   // {title: "", index: 25,name: "agenda-bruxelles.png", alt: "bruxelles bours", width: 960, height: 640 },
   // {title: "", index: 26,name: "agenda-wallonie.png", alt: "picture of liege", width: 960, height: 640 },
